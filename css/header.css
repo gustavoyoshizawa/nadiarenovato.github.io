@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  padding: 30px 120px;
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+nav li {
+  list-style: none;
+  color: #000000;
+}
+
+.header-menu a {
+  color: #000000;
+  font-size: 18px;
+  list-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: #4c7840;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #4c7840;
+}
+
+.icon-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-name i {
+  font-size: 24px;
+  color: #4c7840;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+#btn-mobile {
+  display: none;
+}
+.mobile-menu-icon {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .header {
+    display: block;
+  }
+  .header-menu {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    display: flex;
+    padding: 15px 20px;
+  }
+  .header-menu {
+    margin-top: 0px;
+  }
+  .icon-name i {
+    display: none;
+  }
+  #btn-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+  }
+  #btn-mobile i {
+    font-size: 25px;
+  }
+  .mobile-menu-icon {
+    display: block;
+    text-align: center;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    height: 0px;
+    z-index: 1000;
+    background-color: rgba(243, 244, 246, 0.95);
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.6s;
+    text-align: center;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    text-align: center;
+    visibility: visible;
+  }
+  #menu li {
+    margin: 10px 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  .header-menu a::after {
+    display: none;
+  }
+  #hamburger {
+    background: white;
+    transition: 0.6s;
+  }
+  #nav.active #hamburger {
+    transform: rotate(90deg);
+  }
+}

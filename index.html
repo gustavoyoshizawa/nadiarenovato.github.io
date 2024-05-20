@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./svg/cube-solid.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Portfólio Nádia</title>
+  </head>
+  <body class="bg">
+    <header class="header" id="header">
+      <div class="icon-name">
+        <i class="fa-solid fa-cube"></i>
+        <img src="/svg/Nádia Renovato.svg" alt="Nádia Renovato" />
+      </div>
+      <nav id="nav" aria-label="primaria">
+        <button id="btn-mobile">
+          <i id="hamburger" class="fa-solid fa-bars"></i>
+        </button>
+        <ul id="menu" class="header-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="home">
+      <div class="introducao">
+        <div class="info">
+          <h4 class="fadeInDown" data-anime="200">Olá, meu nome é</h4>
+          <h1 class="nome fadeInDown" data-anime="400">Nádia Renovato</h1>
+          <h2 class="fadeInDown" data-anime="600">
+            Sou Estudante de Arquitetura
+          </h2>
+          <p class="fadeInDown" data-anime="800">
+            Meu objetivo é criar espaços visualmente impressionantes e
+            funcionalmente eficientes, sempre priorizando as necessidades e
+            desejos dos clientes.
+          </p>
+        </div>
+        <div class="intro-img fadeInDown" data-anime="1000">
+          <img src="./svg/nadiav2.svg" alt="" width="380" height="380" />
+        </div>
+      </div>
+    </main>
+    <section class="sobre" id="sobre" aria-label="Sobre">
+      <div class="sobre-titulo fadeInDown" data-anime="200">
+        <i class="fa-solid fa-user-large"></i>
+        <h1>Sobre <span>Mim</span></h1>
+      </div>
+      <div class="info-sobre">
+        <div class="info-img fadeInDown" data-anime="400">
+          <img src="./svg/nadia.me.svg" alt width="400" height="400" />
+        </div>
+        <div class="info-texto">
+          <h1 class="fadeInDown" data-anime="600">Muito prazer!</h1>
+          <p class="fadeInDown" data-anime="800">
+            Como estudante de arquitetura no último ano, priorizo pontualidade,
+            organização e o trabalho em equipe. Sou flexível, adaptando-me
+            facilmente às mudanças, buscando soluções criativas e eficazes.
+            Essas características definem minha identidade profissional,
+            demonstrando meu comprometimento e capacidade na área.
+          </p>
+          <div class="info-email fadeInDown" data-anime="1000">
+            <span>E-mail :</span>
+            <p>nadiareal57@gmail.com</p>
+          </div>
+          <div class="info-local fadeInDown" data-anime="1300">
+            <span>Localização :</span>
+            <p>Suzano - SP</p>
+          </div>
+          <div class="botao fadeInDown" data-anime="1500">
+            <a class="btn seta" href="./Nádia.pdf" target="_blank">Resumo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="habilidades"
+      class="habilidades"
+      aria-label="Minhas Competências"
+    >
+      <div class="habilidades-titulo">
+        <i class="fa-solid fa-chalkboard"></i>
+        <h1>Habilidades</h1>
+      </div>
+      <div class="habilidades-btn">
+        <div class="habilidades-flex">
+          <nav class="nav-bg">
+            <ul class="dados-btn">
+              <li><button id="softwares" class="active">Softwares</button></li>
+              <li><button id="competencias">Competências</button></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="teste">
+        <div class="softwares">
+          <div>
+            <img src="./svg/softwares/autocad.svg" alt="" />
+            <p>AutoCAD</p>
+          </div>
+          <div>
+            <img src="./svg/softwares/sketchup.svg" alt="" />
+            <p>SketchUp</p>
+          </div>
+          <div>
+            <img src="./svg/softwares/revit.svg" alt="" />
+            <p>Revit</p>
+          </div>
+          <div>
+            <img src="./svg/softwares/qgis.svg" alt="" />
+            <p>Qgis</p>
+          </div>
+          <div>
+            <img src="./svg/softwares/office.svg" alt="" />
+            <p>Office</p>
+          </div>
+          <div>
+            <img src="./svg/softwares/photoshop.svg" alt="" />
+            <p>Photoshop</p>
+          </div>
+        </div>
+        <div id="competencias" class="competencias">
+          <p>teste</p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
+</html>

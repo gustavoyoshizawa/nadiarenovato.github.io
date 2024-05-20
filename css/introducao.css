@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1400px;
+  height: 90vh;
+  margin: 10px auto;
+  font-family: "Poppins", sans-serif;
+  padding: 0px 120px;
+}
+
+.intro-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+.intro-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info {
+  margin-top: 80px;
+}
+
+.info h4 {
+  color: #4c7840;
+  margin-top: 50px;
+}
+
+.info h1 {
+  color: #000000;
+  margin-top: 10px;
+  font-size: 45px;
+}
+
+.info h2 {
+  color: #444643;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.info p {
+  line-height: 1.8;
+  letter-spacing: 1.2px;
+  max-width: 50ch;
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+    padding: 40px 20px 0px 20px;
+    gap: 20px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-content: baseline;
+    margin: 0;
+    grid-row: 2;
+  }
+  .info h4 {
+    margin-top: 0px;
+  }
+  .info h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  .info h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .info p {
+    max-width: 100%;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .intro-img {
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    width: 80%;
+  }
+}
