@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-.introducao {
+main {
+  background: #f9f9f9 url(../svg/detalhes/bottom-right-ve.svg) no-repeat bottom
+    16px right 20px;
+}
+.intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1400px;
-  height: 90vh;
-  margin: 10px auto;
+  height: 85vh;
+  margin: 40px auto;
   font-family: "Poppins", sans-serif;
   padding: 0px 120px;
 }
@@ -50,8 +54,11 @@
 }
 
 @media (max-width: 800px) {
-  .introducao {
-    height: 85vh;
+  main {
+    background: #f9f9f9;
+  }
+  .intro {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;

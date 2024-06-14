@@ -1,0 +1,57 @@
+.footer {
+  background: #4c7840;
+  padding: 30px 0px;
+  font-family: "Livvic", sans-serif;
+  text-align: center;
+}
+
+.footer .linha {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+
+.footer .linha a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.footer .linha a:hover {
+  transform: scale(1.2);
+}
+
+.footer .linha ul {
+  width: 100%;
+}
+
+.footer .linha ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .linha a i {
+  font-size: 2em;
+  margin: 0% 1%;
+  transition: 0.3s;
+}
+
+.footer .linha a i:hover {
+  scale: 1.3;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    padding: 5%;
+  }
+  .footer .linha ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .linha a i {
+    margin: 0% 3%;
+  }
+}

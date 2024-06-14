@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 .sobre {
-  height: 100vh;
+  height: 90vh;
 }
 
 .sobre-titulo {
@@ -31,11 +31,11 @@
 
 .info-sobre {
   height: 500px;
-  max-width: 1400px;
-  gap: 30px;
+  max-width: 1800px;
+  gap: 70px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0px 120px;
   margin-top: 80px;
 }
@@ -148,13 +148,14 @@
   .sobre {
     height: 100vh;
     padding-top: 0px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
   .info-sobre {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0px 20px;
     margin-top: 15px;
+    gap: 30px;
   }
   .sobre-titulo {
     padding: 15px 20px;
@@ -170,6 +171,7 @@
   }
   .info-img {
     display: flex;
+    justify-content: center;
     margin: 0px auto;
     width: 80%;
   }
