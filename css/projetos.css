@@ -51,7 +51,7 @@
   flex-direction: row-reverse;
 }
 
-.projetos-lista h3 {
+.projetos-lista h1 {
   font-family: "Livvic", sans-serif;
   text-align: start;
 }
@@ -70,12 +70,12 @@
   position: relative;
 }
 
-.info-projetos h3 {
+.info-projetos h1 {
   display: flex;
   align-items: center;
 }
 
-.info-projetos h3::before {
+.info-projetos h1::before {
   content: "";
   display: inline-block;
   height: 8px;
@@ -94,7 +94,7 @@
   .projetos-lista li:nth-child(even) {
     flex-direction: column-reverse;
   }
-  .projetos-lista h3 {
+  .projetos-lista h1 {
     text-align: center;
   }
   .projetos-lista p {

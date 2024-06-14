@@ -30,11 +30,13 @@
   margin-top: 70px;
 }
 
-.experiencia-info h3 {
+.experiencia-info h1,
+h3 {
   font-family: "Livvic", sans-serif;
 }
 
-.experiencia-info h4 {
+.experiencia-info h2 {
+  color: #4c7840;
   font-family: "Livvic", sans-serif;
   font-size: 16px;
 }
@@ -161,7 +163,7 @@
   grid-column: 4;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .experiencia-1 {
     display: flex;
     justify-content: center;

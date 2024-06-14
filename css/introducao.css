@@ -30,18 +30,20 @@ main {
   margin-top: 80px;
 }
 
-.info h4 {
+.info h1 {
   color: #4c7840;
   margin-top: 50px;
+  margin-top: 0px;
+  font-size: 20px;
 }
 
-.info h1 {
+.info h2 {
   color: #000000;
   margin-top: 10px;
   font-size: 45px;
 }
 
-.info h2 {
+.info h3 {
   color: #444643;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -73,9 +75,6 @@ main {
     align-content: baseline;
     margin: 0;
     grid-row: 2;
-  }
-  .info h4 {
-    margin-top: 0px;
   }
   .info h1 {
     font-size: 36px;
