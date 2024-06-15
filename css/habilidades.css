@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .habilidades {
   font-family: "Livvic", sans-serif;
-  height: 90vh;
   padding: 0px 20px;
 }
 
@@ -29,18 +28,6 @@
   padding: 30px 0px;
 }
 
-.habilidades-btn {
-  margin: 14px auto;
-  width: 100%;
-}
-
-.dados-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
 .habilidades-flex {
   display: flex;
   align-items: center;
@@ -49,9 +36,11 @@
 }
 
 .dados-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Poppins", sans-serif;
   letter-spacing: 1.2;
-  width: 180px;
   padding: 8px;
   border: 0px;
   font-size: 16px;
@@ -59,12 +48,28 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .nav-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
-  background: #ffffff;
   border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.dados-btn {
+  display: flex;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+.dados-btn button {
+  display: flex;
+  justify-content: center;
+  width: auto;
 }
 
 .softwares {
@@ -206,63 +211,62 @@
 
 @media (max-width: 900px) {
   .habilidades {
-    height: 90vh;
+    margin: 50px 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
+}
 
-  /* Software */
-  .softwares {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 60%;
-    padding: 30px;
-  }
-  .hab-soft-bg {
-    width: 100%;
-    padding: 0px;
-  }
-  .dados-btn button {
-    width: 160px;
-  }
+/* Software */
+.softwares {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 60%;
+  padding: 30px;
+}
+.hab-soft-bg {
+  width: 100%;
+  padding: 0px;
+}
 
-  /* Competências */
-  .competencias {
-    max-width: 90vh;
-  }
-  .habilidades-lista li {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 10px;
-    margin-left: 10px;
-    font-size: 14px;
-    line-height: 1.25;
-  }
-  #pessoal::before {
-    position: initial;
-  }
-  #autocad::before {
-    position: initial;
-  }
-  #sketchup::before {
-    position: initial;
-  }
-  #revit::before {
-    position: initial;
-  }
-  #qgis::before {
-    position: initial;
-  }
-  #office::before {
-    position: initial;
-  }
-  #photoshop::before {
-    position: initial;
-  }
+/* Competências */
+.competencias {
+  max-width: auto;
+}
+.habilidades-lista li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 1.25;
+}
+#pessoal::before {
+  position: initial;
+}
+#autocad::before {
+  position: initial;
+}
+#sketchup::before {
+  position: initial;
+}
+#revit::before {
+  position: initial;
+}
+#qgis::before {
+  position: initial;
+}
+#office::before {
+  position: initial;
+}
+#photoshop::before {
+  position: initial;
+}
 
-  .soft-hab li {
-    padding-top: 7px;
-    padding-bottom: 7px;
-  }
-  .soft-hab li:last-child {
-    padding-bottom: 10px;
-  }
+.soft-hab li {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.soft-hab li:last-child {
+  padding-bottom: 10px;
 }
