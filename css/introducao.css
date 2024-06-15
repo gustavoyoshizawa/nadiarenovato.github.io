@@ -8,7 +8,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1400px;
-  height: 85vh;
+
   margin: 40px auto;
   font-family: "Poppins", sans-serif;
   padding: 0px 120px;
@@ -60,7 +60,6 @@ main {
     background: #f9f9f9;
   }
   .intro {
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
