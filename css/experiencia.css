@@ -229,7 +229,6 @@ h3 {
   border-radius: 5px;
   padding: 22px;
   gap: 10px;
-  max-width: 200px;
 }
 
 .barra {
@@ -283,7 +282,10 @@ h3 {
   grid-column: 4;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 950px) {
+  .formacao-info {
+    width: 250px;
+  }
   .formacao-1 {
     display: flex;
     justify-content: center;
