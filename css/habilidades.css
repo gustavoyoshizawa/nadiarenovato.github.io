@@ -50,6 +50,9 @@
   cursor: pointer;
   transition: 0.3s;
   text-decoration: none;
+  width: auto;
+  text-decoration: none;
+  color: black;
 }
 
 .nav-bg {
@@ -65,12 +68,6 @@
   display: flex;
   text-decoration: none;
   flex-wrap: wrap;
-}
-
-.dados-btn button {
-  display: flex;
-  justify-content: center;
-  width: auto;
 }
 
 .softwares {

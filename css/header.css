@@ -78,6 +78,7 @@ nav a:hover {
 }
 
 #btn-mobile {
+  color: #000000;
   display: none;
 }
 .mobile-menu-icon {
