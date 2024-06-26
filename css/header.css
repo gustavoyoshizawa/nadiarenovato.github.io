@@ -80,7 +80,9 @@ nav a:hover {
 #btn-mobile {
   color: #000000;
   display: none;
+  cursor: pointer;
 }
+
 .mobile-menu-icon {
   display: none;
 }
