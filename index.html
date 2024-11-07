@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <link rel="icon" href="./svg/cube-solid.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Portfólio Nádia</title>
     <meta
       name="description"
@@ -27,14 +27,13 @@
   <body class="bg">
     <header class="header" id="header">
       <div class="icon-name">
-        <i class="fa-solid fa-cube"></i>
         <img src="/svg/Nádia Renovato.svg" alt="Nádia Renovato" />
       </div>
-      <nav id="nav" aria-label="primaria">
+      <nav id="nav" class="menu-desktop" data-menu="button">
         <button id="btn-mobile">
-          <i id="hamburger" class="fa-solid fa-bars"></i>
+          <span id="hamburger"></span>
         </button>
-        <ul id="menu" class="header-menu js-menu">
+        <ul id="menu" class="header-menu js-menu" data-menu="list">
           <li><a href="#home">Home</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
@@ -364,21 +363,25 @@
         <div class="linha">
           <a
             href="https://api.whatsapp.com/send?phone=5511956963745&text=Ol%C3%A1%20N%C3%A1dia,%20tudo%20bem?%0AVim%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio.%20Podemos%20conversar?"
+            target="_blank"
             aria-label="Enviar mensagem pelo WhatsApp para Nádia Renovato"
             ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i
           ></a>
           <a
             href="mailto:nadiareal57@gmail.com"
             aria-label="Enviar email para Nádia Renovato"
+            target="_blank"
             ><i class="fa-solid fa-envelope" aria-hidden="true"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/n%C3%A1dia-renovato-alves-6475511a0/"
+            target="_blank"
             aria-label="Visitar perfil de Nádia Renovato no LinkedIn"
             ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
           ></a>
           <a
             href="https://github.com/gustavoyoshizawa"
+            target="_blank"
             aria-label="Visitar perfil do Desenvolvedor do site no GitHub"
             ><i class="fa-brands fa-dev"></i
           ></a>

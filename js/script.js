@@ -1,22 +1,46 @@
 function initNav() {
-  // Botão Nav
-  const btnMobile = document.getElementById("btn-mobile");
+  const menuButton = document.querySelector('[data-menu="button"]');
+  const menuList = document.querySelector('[data-menu="list"]');
+  const eventos = ["click", "touchstart"];
 
-  function toggleMenu() {
-    const nav = document.getElementById("nav");
-    nav.classList.toggle("active");
+  function openMenu() {
+    menuButton.classList.add("ativo");
+    menuList.classList.add("ativo");
+    outsideClick(this, ["touchstart", "click"], () => {
+      menuButton.classList.remove("ativo");
+      menuList.classList.remove("ativo");
+    });
+
+    function outsideClick(element, events, callback) {
+      const html = document.documentElement;
+      const outside = "data-outside";
+      if (!element.hasAttribute(outside)) {
+        events.forEach((userEvent) => {
+          html.addEventListener(userEvent, handleOutsideClick);
+        });
+        element.setAttribute(outside, "");
+      }
+      function handleOutsideClick(event) {
+        if (!element.contains(event.target)) {
+          element.removeAttribute(outside);
+          events.forEach((userEvent) => {
+            html.removeEventListener(userEvent, handleOutsideClick);
+          });
+          callback();
+        }
+      }
+    }
   }
-  btnMobile.addEventListener("click", toggleMenu);
 
-  // Scroll Nav
-  const linkInterno = document.querySelectorAll('.js-menu a[href^="#"]');
-  function diminuirNav() {
-    nav.classList.remove("active");
-  }
-
-  linkInterno.forEach((item) => {
-    item.addEventListener("click", diminuirNav);
+  eventos.forEach((evento) => {
+    menuButton.addEventListener(evento, openMenu);
   });
+}
+initNav();
+
+// Scroll Link Interno
+function initScrollLinkInterno() {
+  const linkInterno = document.querySelectorAll('.js-menu a[href^="#"]');
 
   function ScrollSection(event) {
     event.preventDefault();
@@ -32,7 +56,7 @@ function initNav() {
     item.addEventListener("click", ScrollSection);
   });
 }
-initNav();
+initScrollLinkInterno();
 
 //Habilidades
 function initCompetencias() {

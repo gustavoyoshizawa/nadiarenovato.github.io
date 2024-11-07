@@ -5,7 +5,6 @@ main {
     16px right 20px;
 }
 .intro {
-  /* height: 80vh; */
   height: 800px;
   margin-bottom: 200px;
   display: grid;
@@ -69,7 +68,6 @@ main {
     margin: 0;
     padding: 40px 20px 0px 20px;
     gap: 20px;
-    height: 90vh;
   }
   .info {
     display: flex;
