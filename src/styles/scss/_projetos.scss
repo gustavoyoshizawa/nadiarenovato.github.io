@@ -1,0 +1,68 @@
+.projetos {
+  padding: 0px 20px;
+  margin-bottom: 170px;
+  @include d(s) {
+    margin-bottom: 100px;
+  }
+}
+
+.projetos-titulo {
+  @include titulo();
+}
+
+.projetos-titulo {
+  h1 {
+    font-size: 30px;
+    color: $cinza-escuro;
+  }
+  i {
+    color: $cor-primaria;
+    font-size: 32px;
+  }
+}
+
+.projetos-conteudo {
+  margin-top: 30px;
+  @include d(s) {
+    margin-top: 30px;
+  }
+}
+
+.info-projetos {
+  @include d-flex-center();
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  h1 {
+    display: flex;
+    align-items: center;
+    font-family: $font-2;
+    @include d(m) {
+      font-size: 24px;
+      justify-content: start;
+    }
+    @include d(s) {
+      font-size: 20px;
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 8px;
+      width: 12px;
+      margin-right: 8px;
+      background-color: $cor-primaria;
+      border-radius: 1px;
+    }
+  }
+  p {
+    font-family: $font-1;
+    font-size: 16px;
+    @include d(m) {
+      font-size: 16px;
+    }
+    @include d(s) {
+      font-size: 15px;
+    }
+  }
+}

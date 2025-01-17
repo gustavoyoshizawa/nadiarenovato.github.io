@@ -1,0 +1,153 @@
+.sobre {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  @include d(s) {
+    margin-top: 0px;
+
+    margin-bottom: 100px;
+  }
+}
+
+.sobre-titulo {
+  @include titulo();
+  margin-bottom: 40px;
+  i {
+    color: $cinza-escuro;
+    font-size: 32px;
+  }
+  h1 {
+    font-family: $font-2;
+    color: $cinza-escuro;
+    font-size: 30px;
+  }
+  span {
+    color: $cor-primaria;
+  }
+}
+
+.info-sobre {
+  @include d-flex-center();
+  height: max-content;
+  gap: 70px;
+  @include d(s) {
+    flex-direction: column;
+  }
+}
+
+.info-img {
+  @include d-flex-center;
+  justify-content: end;
+  @include d(s) {
+    justify-content: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.info-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  h1 {
+    font-family: $font-2;
+    font-size: 30px;
+  }
+  p {
+    max-width: 72ch;
+    font-family: $font-1;
+    line-height: 1.65;
+    letter-spacing: 1.2;
+    font-size: 16px;
+    @include d(s) {
+      font-size: 14px;
+    }
+  }
+}
+
+.info-email {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  span {
+    font-size: 16px;
+    color: #4c7840;
+    font-family: $font-2;
+    font-weight: bold;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    @include d(s) {
+      font-size: 14px;
+    }
+  }
+}
+
+.info-local {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  span {
+    font-size: 16px;
+    color: $cor-primaria;
+    font-family: $font-2;
+    font-weight: bold;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    @include d(s) {
+      font-size: 14px;
+    }
+  }
+}
+
+.botao-container {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  background-color: $cor-primaria;
+  padding: 18px 26px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: $font-1;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: $branco;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  max-width: max-content;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.seta {
+  display: flex;
+  align-items: center;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    margin-left: 12px;
+    background: url(/svg/icon/seta-branca.svg);
+    transition: 0.3s;
+  }
+  &:hover::after {
+    transform: translateX(4px);
+  }
+}

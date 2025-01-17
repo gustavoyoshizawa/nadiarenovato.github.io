@@ -1,0 +1,213 @@
+.experiencia {
+  box-sizing: border-box;
+  margin-bottom: 150px;
+  @include d(s) {
+    margin-bottom: 100px;
+  }
+}
+
+.experiencia-titulo {
+  @include titulo();
+  h1 {
+    font-size: 30px;
+    color: $cinza-escuro;
+  }
+  i {
+    color: $cor-primaria;
+    font-size: 32px;
+  }
+}
+
+.experiencia-conteudo {
+  margin-top: 70px;
+}
+.formacao {
+  width: 60%;
+  @include d(m) {
+    width: 85%;
+  }
+  @include d(s) {
+    width: 90%;
+  }
+}
+
+.experiencias,
+.formacao {
+  position: relative;
+  h1,
+  h3 {
+    font-family: $font-2;
+  }
+  h2 {
+    color: $cor-primaria;
+    font-family: $font-2;
+    font-size: 18px;
+  }
+  p {
+    font-family: $font-1;
+    font-size: 14px;
+  }
+}
+
+.experiencias div:nth-child(odd),
+.formacao div:nth-child(odd) {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.experiencias div:nth-child(even),
+.formacao div:nth-child(even) {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.experiencia-flex {
+  @include d-flex-center();
+  margin: 30px 0px;
+}
+
+.experiencia-conteudo {
+  @include d-flex-center();
+  margin: 50px auto;
+}
+
+.experiencias::before,
+.formacao::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: $border-color;
+  transform: translateX(-50%);
+  @include d(s) {
+    left: 97%;
+  }
+}
+
+.formacao::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: $border-color;
+  transform: translateX(-50%);
+  @include d(s) {
+    left: 100%;
+  }
+}
+
+.experiencias > div,
+.formacao > div {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.experiencias > div:nth-child(odd),
+.formacao > div:nth-child(odd) {
+  flex-direction: row-reverse;
+  @include d(s) {
+    flex-direction: column;
+  }
+}
+
+.experiencias > div::before,
+.formacao > div::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #aed1a4;
+  border: 4px solid $branco;
+  border-radius: 50%;
+  z-index: 1;
+  @include d-flex-center();
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  color: #4c7840;
+  content: "\f0f2";
+  @include d(s) {
+    left: 97%;
+  }
+}
+
+.formacao > div::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #aed1a4;
+  border: 4px solid $branco;
+  border-radius: 50%;
+  z-index: 1;
+  @include d-flex-center();
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  color: #4c7840;
+  content: "\f19d";
+  @include d(s) {
+    left: 100%;
+  }
+}
+
+.experiencias > div:nth-child(odd)::before,
+.formacao > div:nth-child(odd)::before {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #aed1a4;
+  border: 4px solid $branco;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.experiencias > div:nth-child(odd) > div,
+.experiencias > div:nth-child(even) > div {
+  background-color: $branco;
+  border: 2px solid $cor-primaria;
+  border-radius: 5px;
+  padding: 20px;
+  width: calc(50% - 40px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  @include d(s) {
+    width: 90%;
+  }
+}
+
+.formacao > div:nth-child(odd) > div,
+.formacao > div:nth-child(even) > div {
+  background-color: $branco;
+  border: 2px solid $cor-primaria;
+  border-radius: 5px;
+  padding: 20px;
+  width: calc(50% - 40px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  @include d(s) {
+    width: 90%;
+  }
+}
+
+.experiencias > div:nth-child(odd) > div {
+  margin-left: 40px;
+  @include d(s) {
+    margin-left: 0px;
+  }
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

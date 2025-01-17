@@ -1,0 +1,41 @@
+.footer {
+  background: $cor-primaria;
+  padding: 30px 0px;
+  font-family: $font-2;
+  text-align: center;
+  @include d(s) {
+    padding: 5%;
+  }
+  .copy {
+    color: $branco;
+    font-size: 16px;
+    margin: 5px 0px;
+  }
+  .linha {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: $branco;
+    font-size: 16px;
+    @include d(s) {
+      @include d-flex-center();
+      gap: 30px;
+    }
+    a {
+      text-decoration: none;
+      color: $branco;
+      transition: 0.5s;
+      &:hover {
+        transform: scale(1.2);
+      }
+      i {
+        font-size: 32px;
+        margin: 0% 1%;
+        transition: 0.3s;
+        &:hover {
+          scale: 1.3;
+        }
+      }
+    }
+  }
+}

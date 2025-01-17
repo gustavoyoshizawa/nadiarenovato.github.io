@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $background;
+}
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(0, 0, -30px);
+  transition: 0.8s;
+}
+.js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0px, 0, 0px);
+}

@@ -17,11 +17,21 @@
       rel="stylesheet"
     />
     <link rel="icon" href="./svg/cube-solid.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/styles/css/style.min.css" />
+
     <title>Portfólio Nádia</title>
     <meta
       name="description"
-      content="Portfólio de arquitetura de Nadia Renovato - Estudante criativa transformando espaços com design inovador e soluções elegantes. Descubra projetos únicos que combinam estética e funcionalidade."
+      content="Portfólio de arquitetura de Nadia Renovato - Arquiteta criativa transformando espaços com design inovador e soluções elegantes. Descubra projetos únicos que combinam estética e funcionalidade."
     />
   </head>
   <body class="bg">
@@ -43,172 +53,123 @@
         </ul>
       </nav>
     </header>
-    <main id="home" class="js-scroll">
-      <div class="intro">
-        <div class="info">
-          <h1>Olá, meu nome é</h1>
-          <h2>Nádia Renovato</h2>
-          <h3>Sou Estudante de Arquitetura</h3>
-          <p>
-            Meu objetivo é criar espaços visualmente impressionantes e
-            funcionalmente eficientes, sempre priorizando as necessidades e
-            desejos dos clientes.
-          </p>
+    <main>
+      <section class="container intro js-scroll">
+        <div class="col-6">
+          <div class="intro-info">
+            <h1>Olá, meu nome é</h1>
+            <h2>Nádia Renovato</h2>
+            <h3>Sou Arquiteta e Urbanista</h3>
+            <p>
+              Meu objetivo é criar espaços visualmente impressionantes e
+              funcionalmente eficientes, sempre priorizando as necessidades e
+              desejos dos clientes.
+            </p>
+          </div>
         </div>
-        <div class="intro-img fadeInDown">
-          <img src="./svg/nadiav2.svg" alt="" width="380" height="380" />
+        <div class="col-6 intro-img">
+          <img src="/img/nadia.png" alt="Foto Nádia Renovato" />
         </div>
-      </div>
+      </section>
     </main>
-    <section class="sobre js-scroll" id="sobre" aria-label="Sobre">
-      <div class="sobre-titulo fadeInDown">
+
+    <section class="container sobre js-scroll" id="sobre" aria-label="Sobre">
+      <div class="sobre-titulo">
         <i class="fa-solid fa-user-large"></i>
         <h1>Sobre <span>Mim</span></h1>
       </div>
       <div class="info-sobre">
-        <div class="info-img fadeInDown">
-          <img src="./svg/nadia.me.svg" alt width="400" height="400" />
+        <div class="col-6">
+          <div class="info-img">
+            <img
+              src="/img/nadia.me.png"
+              alt="Foto Nádia Renovato"
+              width="400"
+              height="400"
+            />
+          </div>
         </div>
-        <div class="info-texto">
-          <h1>Muito prazer!</h1>
-          <p>
-            Como estudante de arquitetura no último ano, priorizo pontualidade,
-            organização e o trabalho em equipe. Sou flexível, adaptando-me
-            facilmente às mudanças, buscando soluções criativas e eficazes.
-            Essas características definem minha identidade profissional,
-            demonstrando meu comprometimento e capacidade na área.
-          </p>
-          <div class="info-email fadeInDown">
-            <span>E-mail :</span>
-            <p>nadiareal57@gmail.com</p>
-          </div>
-          <div class="info-local fadeInDown">
-            <span>Localização :</span>
-            <p>Suzano - SP</p>
-          </div>
-          <div class="botao fadeInDown">
-            <a class="btn seta" href="./Nádia.pdf" target="_blank"
-              >Portfólio PDF</a
-            >
+        <div class="col-6">
+          <div class="info-texto">
+            <h1>Muito prazer!</h1>
+            <p>
+              Como estudante de arquitetura no último ano, priorizo
+              pontualidade, organização e o trabalho em equipe. Sou flexível,
+              adaptando-me facilmente às mudanças, buscando soluções criativas e
+              eficazes. Essas características definem minha identidade
+              profissional, demonstrando meu comprometimento e capacidade na
+              área.
+            </p>
+            <div class="info-email">
+              <span>E-mail :</span>
+              <p>nadiareal57@gmail.com</p>
+            </div>
+            <div class="info-local">
+              <span>Localização :</span>
+              <p>Suzano - SP</p>
+            </div>
+            <div class="botao-container">
+              <a class="btn seta" href="./Nádia.pdf" target="_blank"
+                >Portfólio PDF</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <section
       id="habilidades"
-      class="habilidades js-scroll"
+      class="habilidades js-scroll container"
       aria-label="Minhas Competências"
     >
-      <div class="habilidades-titulo">
-        <i class="fa-solid fa-chalkboard"></i>
-        <h1>Habilidades</h1>
-      </div>
-      <div class="habilidades-btn">
-        <div class="habilidades-flex">
-          <nav class="nav-bg">
-            <ul class="dados-btn">
-              <li>
-                <button id="softwares" class="active">Softwares</button>
-              </li>
-              <li><button id="competencias">Competências</button></li>
-            </ul>
-          </nav>
+      <div class="col-12">
+        <div class="habilidades-titulo">
+          <i class="fa-solid fa-chalkboard"></i>
+          <h1>Habilidades</h1>
         </div>
-      </div>
-      <div class="hab-soft-bg">
-        <div class="softwares">
-          <div>
-            <img src="./svg/softwares/autocad.svg" alt="" />
-            <p>AutoCAD</p>
-          </div>
-          <div>
-            <img src="./svg/softwares/sketchup.svg" alt="" />
-            <p>SketchUp</p>
-          </div>
-          <div>
-            <img src="./svg/softwares/revit.svg" alt="" />
-            <p>Revit</p>
-          </div>
-          <div>
-            <img src="./svg/softwares/qgis.svg" alt="" />
-            <p>Qgis</p>
-          </div>
-          <div>
-            <img src="./svg/softwares/office.svg" alt="" />
-            <p>Office</p>
-          </div>
-          <div>
-            <img src="./svg/softwares/photoshop.svg" alt="" />
-            <p>Photoshop</p>
-          </div>
-        </div>
-        <div id="competencia" class="competencias">
-          <div class="habilidades-lista">
-            <nav class="soft-hab">
-              <ul>
-                <li id="pessoal">Disciplina</li>
-                <li id="pessoal">Flexibilidade</li>
-                <li id="pessoal">Organização</li>
-                <li id="pessoal">Trabalho em Equipe</li>
-                <li id="pessoal">Pontualidade</li>
-                <li id="autocad">
-                  Criação e desenvolvimento de projetos técnicos através do
-                  gerenciamento de layers.
+        <div class="habilidades-btn">
+          <div class="habilidades-flex">
+            <nav class="nav-bg">
+              <ul class="dados-btn">
+                <li>
+                  <button
+                    class="tab-btn active"
+                    data-tab="softwares"
+                    data-button
+                  >
+                    Softwares
+                  </button>
                 </li>
-                <li id="autocad">Criar e editar blocos.</li>
-                <li id="autocad">Configuração de arquivos para impressão.</li>
-                <li id="autocad">
-                  Criar, editar e transformar imagens usando recursos do
-                  programa para fins arquitetônicos.
-                </li>
-                <li id="sketchup">
-                  Criar modelos tridimensionais e maquete eletrônica de um
-                  projeto, através do AutoCAD.
-                </li>
-                <li id="sketchup">Edição de texturas e materiais.</li>
-                <li id="sketchup">
-                  Criação, edição e ajuste de blocos e componentes.
-                </li>
-                <li id="sketchup">Configuração de cenas.</li>
-                <li id="revit">Aplicação da metodologia BIM.</li>
-                <li id="revit">
-                  Modelagem de projeto 3D através de parâmetros.
-                </li>
-                <li id="revit">Estudos de insolação e topografia.</li>
-                <li id="revit">Representação gráfica.</li>
-                <li id="revit">
-                  Diagramação de pranchas e renderização no software.
-                </li>
-                <li id="qgis">Modelos e tipos básicos de dados espaciais.</li>
-                <li id="qgis">
-                  Processamento de dados raster e vetoriais no QGIS.
-                </li>
-                <li id="qgis">
-                  Aprender em detalhes sobre projeção de mapas e seus tipos.
-                </li>
-                <li id="office">
-                  Nível intermediário dos softwares: Word, Power Point e Excel.
-                </li>
-                <li id="photoshop">
-                  Criar, editar e transformar imagens usando recursos do
-                  programa para fins arquitetônicos.
+                <li>
+                  <button class="tab-btn" data-tab="competencias" data-button>
+                    Competências
+                  </button>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
+
+        <div class="tab-content"></div>
       </div>
     </section>
-    <section class="projetos js-scroll" id="projetos" aria-label="Projetos">
-      <div class="projetos-titulo fadeInDown" data-anime="200">
+
+    <section
+      class="container projetos js-scroll"
+      id="projetos"
+      aria-label="Projetos"
+    >
+      <div class="projetos-titulo" data-anime="200">
         <i class="fa-solid fa-pen-ruler"></i>
         <h1>Projetos</h1>
       </div>
       <div class="projetos-conteudo">
-        <nav>
-          <ul class="projetos-lista">
-            <li>
-              <img src="./img/projetos/calhambeque.png" alt="" />
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <img src="./img/projetos/calhambeque.jpg" alt="" />
               <div class="info-projetos">
                 <h1>Restaurante Calhambeque</h1>
                 <p>
@@ -224,9 +185,11 @@
                   ANVISA, CVS 5 EIE da Vigilância Sanitária e a NBR9077.
                 </p>
               </div>
-            </li>
-            <li>
-              <img src="./img/projetos/acessivel.png" alt="" />
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <img src="./img/projetos/acessivel.jpg" alt="" />
               <div class="info-projetos">
                 <h1>Residência Acessível</h1>
                 <p>
@@ -240,12 +203,14 @@
                   ambientes, também foi projetado um elevador que, transfere o
                   individuo do hall até a suíte principal. Na fundação foram
                   utilizadas sapatas isoladas e como sistema estrutural pilar,
-                  viga, laje por ser o mais convencional no nosso país
+                  viga, laje por ser o mais convencional no nosso país.
                 </p>
               </div>
-            </li>
-            <li>
-              <img src="./img/projetos/paginacao.png" alt="" />
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <img src="./img/projetos/paginacao.jpg" alt="" />
               <div class="info-projetos">
                 <h1>Projetos de Paginação</h1>
                 <p>
@@ -257,107 +222,59 @@
                   sendo aplicado um revestimento com determinadas
                   peculiaridades, sendo assim, foram indicadas as vistas em
                   planta e indicações de assentamento e detalhamento durante a
-                  execução do produto em obra
+                  execução do produto em obra.
                 </p>
               </div>
-            </li>
-          </ul>
-        </nav>
+            </div>
+          </div>
+          <!--  -->
+          <div class="swiper-pagination"></div>
+          <!-- Botões de navegação -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
     </section>
     <section
       id="experiencia"
-      class="experiencia js-scroll"
+      class="experiencia js-scroll container"
       aria-label="Experiência"
     >
-      <div class="experiencia-titulo fadeInDown" data-anime="200">
+      <div class="experiencia-titulo" data-anime="200">
         <i class="fa-solid fa-address-card"></i>
         <h1>Experiência</h1>
       </div>
-      <div class="experiencia-btn">
+      <div class="experiencia-btn col-12">
         <div class="experiencia-flex">
           <nav class="nav-bg">
             <ul class="dados-btn">
               <li>
-                <button id="experiencias" class="active">Experiências</button>
+                <button
+                  id="experiencias"
+                  class="tab-btn active"
+                  data-tab-2="experiencias"
+                  data-btn
+                >
+                  Experiências
+                </button>
               </li>
-              <li><button id="formacao">Formação</button></li>
+              <li>
+                <button
+                  id="formacao"
+                  class="tab-btn"
+                  data-tab-2="formacao"
+                  data-btn
+                >
+                  Formação
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
       </div>
-      <div class="experiencia-conteudo">
-        <div class="experiencia-1">
-          <div class="tudo">
-            <div class="experiencia-info">
-              <h1>Estagiária</h1>
-              <h2>Sobrepor</h2>
-              <p>
-                Realizo análises de projetos de arquitetura e das demais
-                disciplinas envolvidas, desde a fase inicial até a liberação
-                para execução em obra, através de relatórios, de forma a
-                compatibilizar todas as disciplinas envolvidas. Também elaboro
-                projetos de arquitetura, com suas diversas alterações e
-                definições, servindo de base para os projetos complementares.
-              </p>
-              <h3>Mai 2023 - Presente</h3>
-            </div>
-          </div>
-          <div class="barra">
-            <i class="fa-solid fa-suitcase"></i>
-          </div>
-        </div>
-
-        <div class="experiencia-2">
-          <div class="barra">
-            <i class="fa-solid fa-suitcase"></i>
-          </div>
-          <div class="tudo">
-            <div class="experiencia-info">
-              <h1>Projetista</h1>
-              <h2>Mais Revestimentos Cerâmicos</h2>
-              <p>
-                Elaborar e detalhar projetos de paginação em 2D de pisos e
-                revestimentos em ambientes como: áreas internas e externas,
-                piscinas e fachadas, utilizando AutoCAD. Realizar projetos em 3D
-                utilizando SketchUp quando solicitado.
-              </p>
-              <h3>Jan 2022 - Mar 2023</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="formacao-conteudo">
-        <div class="formacao-1">
-          <div class="tudo">
-            <div class="formacao-info">
-              <p>Bacharel</p>
-              <h3>Arquitetura e Urbanismo</h3>
-              <p>Universidade São Judas</p>
-              <h4>2020-2024</h4>
-            </div>
-          </div>
-          <div class="barra">
-            <i class="fa-solid fa-graduation-cap"></i>
-          </div>
-        </div>
-
-        <div class="formacao-2">
-          <div class="barra">
-            <i class="fa-solid fa-graduation-cap"></i>
-          </div>
-          <div class="tudo">
-            <div class="formacao-info">
-              <p>Técnico</p>
-              <h3>Edificações</h3>
-              <p>SENAI "Orlando Laviero Ferraiuolo</p>
-              <h4>2018-2019</h4>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="experiencia-conteudo col-12"></div>
     </section>
+
     <footer id="contato">
       <div class="footer">
         <div class="linha">
@@ -391,9 +308,12 @@
           <p>Transformando espaços, criando emoções.</p>
         </div>
 
-        <div class="linha">Copyright © 2024 Nádia - All rights reserved</div>
+        <div class="copy">
+          Copyright © <span></span> GYDS - All rights reserved
+        </div>
       </div>
     </footer>
   </body>
-  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="./js/script.js"></script>
 </html>
